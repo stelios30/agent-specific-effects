@@ -1,0 +1,10 @@
+{
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+	"cSpell.words": [
+		"argmax",
+		"counterfactually",
+		"probs",
+		"tcfe",
+		"traj"
+	]
+}

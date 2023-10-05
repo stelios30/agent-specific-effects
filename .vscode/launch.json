@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Graph Experiment",
+            "type": "python",
+            "request": "launch",
+            "module": "ase.scripts.graph_experiment",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "3345",
+                "--artifacts-dir", "${workspaceFolder}/results/graph/debug",
+                "--tcfe-threshold", "0.8",
+                "--num-trajectories", "100",
+                "--num-agents", "6",
+                "--num-cf-samples", "1",
+                "--posterior-sample-complexity",
+            ]
+        },
+        {
+            "name": "Run Sepsis Experiment",
+            "type": "python",
+            "request": "launch",
+            "module": "ase.scripts.sepsis_experiment",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "5564",
+                "--artifacts-dir", "${workspaceFolder}/results/sepsis/debug",
+                "--mdp-path", "${workspaceFolder}/results/sepsis/mdp_original.pkl",
+                "--ai-policy-path", "${workspaceFolder}/results/sepsis/ai_policy.pkl",
+                "--cl-policy-path", "${workspaceFolder}/results/sepsis/cl_policy.pkl",
+                "--tcfe-threshold", "0.8",
+                "--num-trajectories", "10",
+                "--num-cf-samples", "100",
+                "--trust-values", "0.0,0.5",
+            ]
+        }
+    ]
+}
