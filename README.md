@@ -1,6 +1,6 @@
 # Agent-Specific Effects
 
-This repository contains the code and instructions necessary to replicate the results from the AAAI 2024 paper "Agent-Specific Effects".
+This repository contains the code and instructions necessary to replicate the results from the "Agent-Specific Effects" paper.
 
 ## Reproducibility
 
