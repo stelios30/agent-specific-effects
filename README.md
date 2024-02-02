@@ -1,13 +1,13 @@
 # Agent-Specific Effects
 
-This repository contains the code and instructions necessary to replicate the results from the "Agent-Specific Effects" paper.
+This repository contains the code and instructions needed to replicate the results from the paper "Agent-Specific Effects: A Causal Effect Propagation Analysis in Multi-Agent MDPs".
 
 ## Reproducibility
 
-To reproduce the results from the paper, you will need to do the following:
+To reproduce the results of the paper, you will need to do the following:
 
-- **Generate the MDP parameters for AI and clinician (CL) actors**. To do so, run the `learn_sepsis_mdp.ipynb` notebook, which will save the results under `results/sepsis/mdp_ai.pkl` and `results/sepsis/mdp_original.pkl`.
-- **Learn AI and CL policies**. To do so, run the `learn_sepsis_actors.ipynb` notebook, which will train and save the policies under `results/sepsis/ai_policy.pkl` and `results/sepsis/cl_policy.pkl`.
+- **Generate the multi-agent MDP's parameters for the sepsis environment**. To do so, run the `learn_sepsis_mdp.ipynb` notebook, which will save the results under `results/sepsis/mdp_ai.pkl` and `results/sepsis/mdp_original.pkl`.
+- **Learn the AI and clinician policies**. To do so, run the `learn_sepsis_actors.ipynb` notebook, which will train and save the policies under `results/sepsis/ai_policy.pkl` and `results/sepsis/cl_policy.pkl`.
 - To reproduce the **results** for the *graph* environment, it suffices to run the following command:
   ```bash
   python -m ase.scripts.graph_experiment 8854 \
@@ -35,10 +35,10 @@ To reproduce the results from the paper, you will need to do the following:
       --trust-values 0.0,0.2,0.4,0.6,0.8,1.0 \
       --posterior-sample-complexity 500
   ```
-- To **visualize** the results for the graph environment, run the `sepsis_results.ipynb` notebook.
+- To **visualize** the results for the sepsis environment, run the `sepsis_results.ipynb` notebook.
 
-The **time** needed to learn both MDP parameters is around $5$ hours whereas the time needed to run the all graph and sepsis experiments is around 2.5 and 7.5 hours respectively.
+The **time** needed to learn the MMDP's parameters is ~5 hours, whereas the time needed to run the experiment for graph and sepsis is ~2.5 and ~7.5 hours, respectively.
 
 ## Dependencies
 
-This project is dependent on Python version 3.9.13. To install the necessary dependencies it suffices to run `pip install -r requirements.txt`.
+This project is dependent on Python version 3.9.13. To install the necessary dependencies, it suffices to run `pip install -r requirements.txt`.
