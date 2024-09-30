@@ -1,6 +1,6 @@
 # Agent-Specific Effects
 
-This repository contains the code and instructions needed to replicate the results from the paper "Agent-Specific Effects: A Causal Effect Propagation Analysis in Multi-Agent MDPs".
+This repository contains the code and instructions needed to replicate the results from the paper "Agent-Specific Effects: A Causal Effect Propagation Analysis in Multi-Agent MDPs" published at ICML24.
 
 ## Reproducibility
 
